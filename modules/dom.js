@@ -2,7 +2,6 @@ let employeeName = document.getElementById("name");
 let employeeJob = document.getElementById("job");
 let employeePassport = document.getElementById("passport");
 let employeeCountry = document.getElementById("country");
-
 let employeesUL = document.getElementById('employeesUL');
 let searchInput = document.getElementById("searchInput");
 let searchContainer = document.getElementById("containerSearch");
@@ -13,24 +12,20 @@ let editEmployeeContainer = document.getElementById("editEmployeeContainer");
 editEmployeeContainer.style.display = 'none';
 
 const employeeForm = document.querySelector('.container-form .form');
-const addBtn = document.querySelector('.add-employee-btn');
+let addBtn = document.getElementById('addBtn');
 
-let id = '';
 export {
+    addBtn,
     employeeName,
     employeeJob,
     employeePassport,
     employeeCountry,
     employeesUL,
-
     searchInput,
     searchContainer,
     searchResultDiv,
     searchTimesBtn,
-
     editEmployeeContainer,
     employeeForm,
-    addBtn,
-    id,
 
 }

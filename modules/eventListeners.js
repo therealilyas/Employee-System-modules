@@ -1,9 +1,10 @@
-import createEmployee from '../modules/service.js'
+import { createEmployee, addEmployee } from '../modules/service.js'
 import {
+    searchResultDiv,
     searchTimesBtn as clearBtn,
     addBtn as addForm,
     searchInput as searchForm,
-} from '../modules/variable.js'
+} from '../modules/dom.js'
 
 clearBtn.addEventListener("click", () => {
     searchInput.value = "";
@@ -20,5 +21,4 @@ searchForm.addEventListener("keyup", () => {
     }
     createEmployee()
 });
-
-export default clearBtn
+export default addForm

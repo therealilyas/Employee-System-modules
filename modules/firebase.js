@@ -9,8 +9,8 @@
      appId: "1:484242441762:web:65ff8193a8dc607d45ec7b",
      measurementId: "G-CWZCTZLM9F"
  };
-
  // Initialize Firebase
  firebase.initializeApp(firebaseConfig);
  const db = firebase.firestore();
+
  export default db

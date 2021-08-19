@@ -1,26 +1,120 @@
-import db from '../modules/db.js'
-import updateEmployee from '../modules/update.js'
-import fetchEmployees from '../modules/employee.js'
+import db from '../modules/firebase.js'
 import {
     employeeName,
     employeeJob,
     employeePassport,
     employeeCountry,
     employeesUL,
-
-
     searchInput,
-    searchContainer,
     searchResultDiv,
-    searchTimesBtn,
-
     editEmployeeContainer,
     employeeForm,
-    addBtn,
-} from '../modules/variable.js'
+} from '../modules/dom.js'
+import addForm from './eventListeners.js';
+
 let id = '';
 
-export default function createEmployee() {
+addForm
+
+
+export default function fetchEmployees() {
+    db.collection('employees').get().then(doc => {
+        loadEmployees(doc);
+    });
+}
+
+export function addEmployee() {
+    db.collection('employees').add({
+        name: employeeForm.name.value,
+        job: employeeForm.job.value,
+        passport: employeeForm.passport.value,
+        country: employeeForm.country.value
+    });
+    clearEmployee()
+}
+
+export function loadEmployees(employees) {
+    employeesUL.innerHTML = "";
+    employees.forEach((employee, id) => {
+        id = employee.id;
+        const employeeLI = document.createElement('li');
+        employeeLI.className = "employee-li";
+        employeeLI.setAttribute("data-id", id);
+
+        const deleteEmployeeBtn = document.createElement("button");
+        deleteEmployeeBtn.className = 'delete-employee-btn';
+        deleteEmployeeBtn.innerText = "X";
+
+        employeeLI.appendChild(deleteEmployeeBtn);
+
+        deleteEmployee(employeeLI, id, deleteEmployeeBtn);
+
+        loadEmployeeDetails(employeeLI, employee);
+    });
+}
+
+export function deleteEmployee(employeeLI, id, btn) {
+
+    btn.addEventListener("click", () => {
+        db.collection('employees').doc(id).delete().then(() => {
+            console.log('Document succesfully deleted!');
+        }).catch(err => {
+            console.log('Error removing document', err);
+        });
+        employeeLI.remove();
+    });
+}
+
+export function loadEmployeeDetails(employeeLI, employee) {
+    const employeeDetails = document.createElement("div");
+    employeeDetails.style.display = 'none';
+
+    const employeeNameSpan = document.createElement('span');
+    employeeNameSpan.innerText = employee.data().name;
+    employeeLI.appendChild(employeeNameSpan);
+
+    const employeeJobP = document.createElement("p");
+    employeeJobP.innerText = employee.data().job;
+    employeeDetails.appendChild(employeeJobP);
+
+    const employeePassportP = document.createElement("p");
+    employeePassportP.innerText = employee.data().passport;
+    employeeDetails.appendChild(employeePassportP);
+
+    const employeeCountryP = document.createElement("p");
+    employeeCountryP.innerText = employee.data().country;
+    employeeDetails.appendChild(employeeCountryP);
+
+    employeeLI.appendChild(employeeDetails);
+
+    onclickStyleEmployee(employeeLI, employeeDetails, employeeLI)
+
+    employeesUL.appendChild(employeeLI);
+}
+
+export function onclickStyleEmployee(btn, efirstElement, secondElement) {
+    btn.onclick = function() {
+        if (efirstElement.style.display == 'block') {
+            efirstElement.style.display = 'none';
+
+            secondElement.style.backgroundColor = 'white';
+            secondElement.style.color = 'black';
+        } else {
+            efirstElement.style.display = 'block';
+            secondElement.style.backgroundColor = 'maroon';
+            secondElement.style.color = 'white';
+        }
+    }
+}
+
+export function clearEmployee() {
+    employeeName.value = '';
+    employeeJob.value = '';
+    employeePassport.value = '';
+    employeeCountry.value = '';
+}
+
+export function createEmployee() {
     let searchedName = searchInput.value;
     db.collection('employees').get().then(querySnapshot => {
         querySnapshot.forEach(doc => {
@@ -52,8 +146,16 @@ export default function createEmployee() {
     });
 }
 
+export function updateEmployee(id) {
+    db.collection('employees').doc(id).update({
+        name: editName.value,
+        job: editJob.value,
+        passport: editPassport.value,
+        country: editCountry.value,
+    });
+}
+
 export function editEmployeeForm(doc) {
-    console.log('clicked');
     id = doc.id;
     let editName = document.getElementById('editName');
     let editJob = document.getElementById("editJob");
