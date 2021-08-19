@@ -16,7 +16,6 @@ let id = '';
 
 addForm
 
-
 export default function fetchEmployees() {
     db.collection('employees').get().then(doc => {
         loadEmployees(doc);
