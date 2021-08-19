@@ -1,0 +1,143 @@
+[33mcommit e8b4e69c4d46f1ce8fdad763d57bdd030711e157[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32morigin[m[33m)[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Thu Aug 19 14:39:23 2021 +0500
+
+    modules
+
+[33mcommit 0cc90401ec13e731aca55184e90df5bd9de115a2[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Thu Aug 19 14:37:30 2021 +0500
+
+    new
+
+[33mcommit 7574f9a0bbfb327df4f33d9b3c180df598e694eb[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Thu Aug 19 13:13:00 2021 +0500
+
+    modules
+
+[33mcommit 375d0bbef59b3eb0a1413a46ab8adfb0d3ac083a[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Thu Aug 19 06:24:22 2021 +0500
+
+    .
+
+[33mcommit b9339a9f1d2507a03312da9403dd5a020c9ac08c[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Thu Aug 19 06:21:56 2021 +0500
+
+    first commit
+
+[33mcommit 6b54b1e72ae873c0f27b8b15d7dc6788ca6c1c1c[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Thu Aug 19 06:20:14 2021 +0500
+
+    first commit
+
+[33mcommit 3ce47d3954282319dcb01a2cef504e1b5ac4f0ce[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Thu Aug 19 06:20:10 2021 +0500
+
+    first commit
+
+[33mcommit 1aa8fe88ea5c30867aeee2fdb1be3d8de5aa7c6d[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Tue Aug 17 21:18:34 2021 +0500
+
+    moved addEventListener
+
+[33mcommit 44449475d577ffac19bb5a1019e8608580c03876[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Tue Aug 17 20:11:13 2021 +0500
+
+    created functions for onclick element
+
+[33mcommit 8d843af756caca528dabe0759068ea9398481f6b[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Tue Aug 17 19:49:41 2021 +0500
+
+    updated
+
+[33mcommit 69a3b99661810e6026c987b279cb3fd31c136d53[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Tue Aug 17 19:49:07 2021 +0500
+
+    updated
+
+[33mcommit b2577e82270fa37aa73c44e244c08300cae66391[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Tue Aug 17 19:46:26 2021 +0500
+
+    updated
+
+[33mcommit 78a712f05d5b6e91a58777f16ee4e26ae5ca7593[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Tue Aug 17 19:40:32 2021 +0500
+
+    updated
+
+[33mcommit 0930b0bba45ced95d0ec5923c2be4f3fbc638d34[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Tue Aug 17 19:28:13 2021 +0500
+
+    updated
+
+[33mcommit 1768bb7b88578c4de6d525816c64a70d592042e6[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Tue Aug 17 15:01:38 2021 +0500
+
+    .
+
+[33mcommit d8c4917aeff5a96e27bacb4a373753048339a499[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Tue Aug 17 14:59:13 2021 +0500
+
+    .
+
+[33mcommit fb576db0158bc5f14dbd10b9a8f7aeff90e830eb[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Mon Aug 16 21:06:16 2021 +0500
+
+    bug fixed
+
+[33mcommit 8482fbd3505f62d89d8db760bc735de072ff0d9a[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Mon Aug 16 20:55:00 2021 +0500
+
+    3.
+
+[33mcommit e2b432594dcb2f3e6250fa375358b1b316acbb5f[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Mon Aug 16 19:26:40 2021 +0500
+
+    1
+
+[33mcommit 3c2debfb83edb3efd5c08032759103af61855d4c[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Mon Aug 16 19:08:46 2021 +0500
+
+    2
+
+[33mcommit acde1e64870599fe86472fdac5a188e058c6cb94[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Mon Aug 16 15:27:31 2021 +0500
+
+    .
+
+[33mcommit fd23fa36ac5ee087d04ee0cd527a76efef8afc8e[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Mon Aug 16 15:15:32 2021 +0500
+
+    2
+
+[33mcommit 5de4ca9d14e0256d6b7b211be9234f96f8a29dcb[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Fri Jul 23 11:22:25 2021 +0500
+
+    Commit
+
+[33mcommit 868be602415286cf66e3d103f41c029e5d2ec177[m
+Author: Ilyas <ilyas.sultanov2020@list.ru>
+Date:   Fri Jul 23 11:14:24 2021 +0500
+
+    first commit
