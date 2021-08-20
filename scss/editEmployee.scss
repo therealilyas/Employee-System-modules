@@ -1,0 +1,17 @@
+.edit-employee-container {
+    border: 1px solid maroon;
+    margin-left: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    flex-direction: column;
+    .edit-employee-btn {
+        margin-top: 1rem;
+        padding: 0.75rem;
+        background: maroon;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        float: right;
+        width: 50px;
+    }
+}

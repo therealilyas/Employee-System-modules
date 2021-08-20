@@ -1,0 +1,27 @@
+.employee-list-container {
+    border: 1px solid maroon;
+    padding: 1rem;
+    border-radius: 5px;
+    .employee-li {
+        list-style-type: none;
+        margin: 0.5rem;
+        font-size: 1rem;
+        padding: 5px;
+        border: 1px dashed maroon;
+        font-weight: 600;
+    }
+    p {
+        margin-top: 0.5rem;
+    }
+    .delete-employee-btn {
+        width: 25px;
+        height: 20px;
+        margin-top: -3px;
+        background-color: maroon;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        font-size: 15px;
+        float: right;
+    }
+}
