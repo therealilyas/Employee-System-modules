@@ -6,25 +6,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    h2 {
-        text-align: center;
-        margin-bottom: 1rem;
-        color: maroon;
-        font-size: 2rem;
-    }
-    input {
-        height: 2rem;
-        border-color: maroon;
-        border-width: 0.1px;
-        border-radius: 3px;
-    }
-    .label {
-        font-size: 1.5rem;
-        color: maroon;
-    }
-    td {
-        padding: 5px;
-    }
     .add-employee-btn {
         margin-top: 1rem;
         outline: none;

@@ -1,4 +1,5 @@
 .search-employee-container {
+    color: maroon;
     position: relative;
     border: 1px solid maroon;
     margin-left: 2rem;
@@ -16,7 +17,6 @@
         border-radius: 5px;
     }
     .search-times {
-        position: fixed;
         position: absolute;
         width: 1.5rem;
         height: 1.5rem;

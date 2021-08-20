@@ -1,9 +1,18 @@
 .edit-employee-container {
+    color: maroon;
     border: 1px solid maroon;
     margin-left: 2rem;
     padding: 1rem;
     border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
     flex-direction: column;
+    .edit-employee-container input {
+        height: 2rem;
+        border-color: maroon;
+        border-width: 0.1px;
+        border-radius: 3px;
+    }
     .edit-employee-btn {
         margin-top: 1rem;
         padding: 0.75rem;
