@@ -1,4 +1,4 @@
-.container-search {
+.search-employee-container {
     position: relative;
     border: 1px solid maroon;
     margin-left: 2rem;
@@ -6,7 +6,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    .container-search input {
+    .search-employee-container input {
         font-size: 1.2rem;
         padding: 0.5rem;
         color: maroon;
